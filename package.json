@@ -7,11 +7,15 @@
     "url": "https://github.com/Innovic-io/ts-microservice.git"
   },
   "scripts": {
-    "start": "nodemon ./dist/app.js",
+    "start": "tsc && nodemon ./dist/app.js",
+    "lint": "tslint ./src/**/*.ts",
     "tsc": "tsc -w"
   },
-  "dependencies": {},
+  "dependencies": {
+    "uuid": "^3.1.0"
+  },
   "devDependencies": {
+    "@types/uuid": "^3.4.3",
     "nodemon": "^1.12.1",
     "tslint": "^5.7.0",
     "typescript": "^2.5.3"

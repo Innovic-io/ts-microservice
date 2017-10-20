@@ -4,6 +4,7 @@
     "target": "es5",
     "noImplicitAny": true,
     "outDir": "./dist",
+    "mapRoot": "./dist",
     "sourceRoot": "./src",
     "sourceMap": true
   },
